@@ -1,6 +1,6 @@
 import "dotenv/config"
 
-const apiUrl = process.env.API_URL;
+const apiUrl = process.env.API_URL || "http://193.187.255.145:3000";
 
 export async function listFeedback() {
     const response = await fetch(`${apiUrl}/feedback`, {

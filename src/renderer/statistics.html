@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts/renderer.js" defer></script>
+    <script src="scripts/statistics.js" defer></script>
+    <title>Statistics</title>
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-600 text-black dark:text-white">
+    <div class="flex flex-row-reverse">
+        <button onclick="loadStatistics()" class="flex rounded-xl p-4 m-2 bg-slate-100 dark:bg-slate-800">Refresh Statistics</button>
+    </div>
+    <div id="statistics-list" class="p-2">
+        <div class="foldable bg-slate-100 rounded-xl p-4 dark:bg-slate-800 w-auto">Event: 6</div>
+        <div class="foldable-content ml-4 space-y-2 mt-2">
+            <div class="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 w-auto">Ready: 3</div>
+            <div class="foldable bg-slate-100 rounded-xl p-4 dark:bg-slate-800 w-auto">Interaction: 3</div>
+            <div class="foldable-content ml-4 space-y-2 mt-2">
+                <div class="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 w-auto">Command: 1</div>
+                <div class="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 w-auto">Component: 2</div>
+                <div class="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 w-auto">Component: 2</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

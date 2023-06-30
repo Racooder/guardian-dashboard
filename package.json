@@ -1,0 +1,24 @@
+{
+  "name": "guardian-dashboard",
+  "version": "0.1.0",
+  "description": "The dashboard for the guardian discord bot",
+  "main": "dist/Main.js",
+  "scripts": {
+    "compile": "tsc && cp -a src/renderer/scripts/. dist/renderer/scripts && cp -a src/renderer/images dist/renderer/images && cp src/renderer/index.html src/renderer/feedback.html src/renderer/statistics.html src/renderer/about.html dist/renderer",
+    "start": "yarn compile && electron .",
+    "tailwind": "npx tailwindcss -i ./src/renderer/css/style.css -o ./dist/renderer/css/style.css --watch"
+  },
+  "author": "Racooder <76227605+Racooder@users.noreply.github.com>",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@types/toastify-js": "^1.11.1",
+    "electron": "^25.2.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "path": "^0.12.7",
+    "toastify-js": "^1.12.0",
+    "typescript": "^5.1.3"
+  }
+}
